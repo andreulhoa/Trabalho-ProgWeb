@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Prof. Jesimar Arantes" /><link rel="canonical" href="https://example.com/fundamentos/assemblies/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Assemblies - Documentação do MkDocs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Assemblies";
+        var mkdocs_page_input_path = "fundamentos\\assemblies.md";
+        var mkdocs_page_url = "/fundamentos/assemblies/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Documentação do MkDocs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Início</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../introducao/">Introdução</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Documentação do MkDocs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Assemblies</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/ufla-prog-web/aula-mkdocs/edit/master/docs/fundamentos/assemblies.md">Edit on ufla-prog-web/aula-mkdocs</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="assemblies">Assemblies</h1>
+<p>Assemblies são os blocos de construção fundamentais de uma aplicação .NET. Eles contêm o código compilado (IL - Intermediate Language), bem como metadados e recursos, como imagens ou textos, necessários para a execução do programa.</p>
+<h2 id="o-que-e-um-assembly">O que é um Assembly?</h2>
+<p>Um assembly pode ser um arquivo <code>.dll</code> (biblioteca de link dinâmico) ou um arquivo <code>.exe</code> (executável). Ele inclui todos os metadados necessários para que o .NET identifique e carregue corretamente os tipos contidos nele.</p>
+<h2 id="tipos-de-assemblies">Tipos de Assemblies</h2>
+<p>Existem dois tipos principais de assemblies:</p>
+<ul>
+<li><strong>Assemblies Privados:</strong> Utilizados exclusivamente por uma aplicação. Eles são implantados junto com a aplicação e não podem ser compartilhados com outras aplicações.</li>
+<li><strong>Assemblies Compartilhados:</strong> Instalados no GAC (Global Assembly Cache) e podem ser compartilhados por várias aplicações.</li>
+</ul>
+<h2 id="estrutura-de-um-assembly">Estrutura de um Assembly</h2>
+<p>Cada assembly contém:</p>
+<ul>
+<li><strong>Manifesto:</strong> Contém metadados sobre o assembly, incluindo informações sobre versões, cultura e referências a outros assemblies.</li>
+<li><strong>Metadados de Tipo:</strong> Contêm definições de todos os tipos (classes, interfaces, etc.) incluídos no assembly.</li>
+<li><strong>Código IL:</strong> O código intermediário que será compilado em tempo de execução pelo CLR.</li>
+<li><strong>Recursos:</strong> Dados como imagens, arquivos de texto, e outros recursos necessários para a aplicação.</li>
+</ul>
+<h2 id="vantagens-do-uso-de-assemblies">Vantagens do Uso de Assemblies</h2>
+<ul>
+<li><strong>Modularidade:</strong> Assemblies permitem dividir o código em módulos, facilitando a manutenção e a reutilização.</li>
+<li><strong>Versionamento:</strong> O manifesto do assembly permite versionamento, garantindo que as aplicações utilizem a versão correta das bibliotecas.</li>
+<li><strong>Distribuição Simplificada:</strong> Assemblies podem ser facilmente distribuídos e instalados, especialmente os assemblies compartilhados através do GAC.</li>
+</ul>
+<h2 id="criando-e-usando-assemblies">Criando e Usando Assemblies</h2>
+<p>Aqui está um exemplo básico de como criar e usar assemblies no .NET:</p>
+<h3 id="criando-um-assembly">Criando um Assembly</h3>
+<p>```bash
+csc /target:library /out:MeuAssembly.dll MeuCodigo.cs</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; GAC116 - 2024</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

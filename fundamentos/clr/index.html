@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Prof. Jesimar Arantes" /><link rel="canonical" href="https://example.com/fundamentos/clr/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Common Language Runtime (CLR) - Documentação do MkDocs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Common Language Runtime (CLR)";
+        var mkdocs_page_input_path = "fundamentos\\clr.md";
+        var mkdocs_page_url = "/fundamentos/clr/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Documentação do MkDocs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Início</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../introducao/">Introdução</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Documentação do MkDocs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Common Language Runtime (CLR)</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/ufla-prog-web/aula-mkdocs/edit/master/docs/fundamentos/clr.md">Edit on ufla-prog-web/aula-mkdocs</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="common-language-runtime-clr">Common Language Runtime (CLR)</h1>
+<p>O Common Language Runtime (CLR) é o motor de execução do .NET. Ele é responsável por gerenciar a execução do código .NET, desde a alocação de memória e execução de threads até a coleta de lixo e a aplicação de políticas de segurança.</p>
+<h2 id="principais-responsabilidades-do-clr">Principais Responsabilidades do CLR</h2>
+<p>O CLR desempenha várias funções cruciais:</p>
+<ul>
+<li>
+<p><strong>Gerenciamento de Memória:</strong> O CLR aloca e desaloca memória automaticamente para objetos, utilizando um processo conhecido como <em>garbage collection</em>. Isso ajuda a evitar problemas comuns como vazamentos de memória.</p>
+</li>
+<li>
+<p><strong>Execução de Código:</strong> O CLR compila o código intermediário (IL) em código de máquina específico para a plataforma, utilizando o compilador JIT (Just-In-Time).</p>
+</li>
+<li>
+<p><strong>Segurança de Tipo:</strong> O CLR verifica a segurança de tipo em tempo de execução, garantindo que o código seja seguro para execução.</p>
+</li>
+<li>
+<p><strong>Gerenciamento de Exceções:</strong> O CLR oferece um modelo unificado para o tratamento de exceções, que pode ser usado por qualquer linguagem que utilize a plataforma .NET.</p>
+</li>
+<li>
+<p><strong>Interoperabilidade:</strong> O CLR facilita a interoperabilidade entre o código gerenciado pelo .NET e o código não gerenciado, permitindo que aplicações .NET interajam com componentes COM e APIs nativas.</p>
+</li>
+</ul>
+<h2 id="como-o-clr-funciona">Como o CLR Funciona?</h2>
+<p>Quando você compila um programa .NET, o código-fonte é transformado em <em>Intermediate Language</em> (IL), um código de baixo nível que é independente da plataforma. Quando o programa é executado, o CLR compila o IL em código de máquina específico da plataforma através do compilador JIT. Esse processo garante que o código seja otimizado para a plataforma onde está sendo executado.</p>
+<h2 id="vantagens-de-usar-o-clr">Vantagens de Usar o CLR</h2>
+<ul>
+<li><strong>Portabilidade:</strong> Como o CLR gerencia a execução do código, a mesma aplicação pode ser executada em diferentes plataformas sem modificações.</li>
+<li><strong>Segurança:</strong> O CLR inclui recursos avançados de segurança que ajudam a proteger as aplicações contra ataques.</li>
+<li><strong>Produtividade:</strong> Com o gerenciamento de memória e a coleta de lixo automatizados, os desenvolvedores podem focar em escrever código, sem se preocupar com a alocação e liberação de memória manualmente.</li>
+</ul>
+<hr />
+<div align="center">
+    <small>© 2024 Documentação .NET. Criado com <a href="https://www.mkdocs.org/">MkDocs</a>.</small>
+</div>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; GAC116 - 2024</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
