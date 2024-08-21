@@ -1,0 +1,16 @@
+site_name: Documentação do MkDocs
+
+site_url: https://example.com/
+site_description: Documentação do MkDocs.
+site_author: Prof. Jesimar Arantes
+
+repo_name: ufla-prog-web/aula-mkdocs
+repo_url: https://github.com/ufla-prog-web/aula-mkdocs
+
+nav:
+  - Início: index.md
+  - Introdução: introducao.md
+
+copyright: Copyright &copy; GAC116 - 2024
+
+theme: readthedocs

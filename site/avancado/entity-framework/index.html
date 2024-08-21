@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Prof. Jesimar Arantes" /><link rel="canonical" href="https://example.com/avancado/entity-framework/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Entity Framework - Documentação do MkDocs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Entity Framework";
+        var mkdocs_page_input_path = "avancado\\entity-framework.md";
+        var mkdocs_page_url = "/avancado/entity-framework/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Documentação do MkDocs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Início</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../introducao/">Introdução</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Documentação do MkDocs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Entity Framework</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/ufla-prog-web/aula-mkdocs/edit/master/docs/avancado/entity-framework.md">Edit on ufla-prog-web/aula-mkdocs</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="entity-framework">Entity Framework</h1>
+<p>Entity Framework (EF) é um ORM (Object-Relational Mapper) para .NET que permite aos desenvolvedores trabalhar com um banco de dados usando objetos .NET, eliminando a necessidade de grande parte do código SQL manual. O EF simplifica o acesso a dados em aplicativos .NET.</p>
+<h2 id="principais-recursos-do-entity-framework">Principais Recursos do Entity Framework</h2>
+<ul>
+<li><strong>Modelo de Dados Baseado em Objetos:</strong> O EF permite que você trabalhe com dados como objetos .NET, sem a necessidade de escrever SQL diretamente.</li>
+<li><strong>Suporte a Múltiplos Bancos de Dados:</strong> Funciona com SQL Server, SQLite, PostgreSQL, MySQL, entre outros.</li>
+<li><strong>Migrations:</strong> Migrations gerencia mudanças no esquema do banco de dados de maneira segura e automática.</li>
+</ul>
+<h2 id="usando-entity-framework">Usando Entity Framework</h2>
+<h3 id="configurando-o-contexto">Configurando o Contexto</h3>
+<p>O ponto central do EF é o <code>DbContext</code>, que é a ponte entre a aplicação .NET e o banco de dados:</p>
+<p>```csharp
+public class MeuContexto : DbContext
+{
+    public DbSet<Produto> Produtos { get; set; }</p>
+<pre><code>protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+    optionsBuilder.UseSqlServer(@"Server=meu_servidor;Database=minha_base_de_dados;Trusted_Connection=True;");
+}
+</code></pre>
+<p>}</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; GAC116 - 2024</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
